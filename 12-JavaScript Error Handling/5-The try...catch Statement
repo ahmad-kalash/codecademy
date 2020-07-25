@@ -1,0 +1,59 @@
+The try...catch Statement
+
+Up to this point, thrown errors have caused our program to stop running. But, we have the ability 
+anticipate and handle these errors by writing code to address the error and allow our program to 
+continue running.
+
+A JavaScript try…catch statement can anticipate and handle thrown errors 
+(both built-in errors as well as those constructed with Error()) while allowing a program 
+to continue running. Code that may throw an error(s) when executed is written within the try block, 
+and actions for handling these errors are written within the catch block.
+
+
+In JavaScript, we use try...catch statement to anticipate and handle errors. 
+
+Take a look at example below:
+
+try {
+  throw Error('This error will get caught');
+} catch (e) {
+  console.log(e); // Prints: This error will get caught
+}
+
+console.log('The thrown error that was caught in the try...catch statement!');
+// Prints: 'The thrown error that was caught in the try...catch statement!'
+
+
+Now, let’s break down what happened in the try...catch statement above:
+
+1) We have code that follows try inside curly braces {} known as the try block.
+2) Inside the try block we insert code that we anticipate might throw an error.
+3) Since we want to see what happens if an error is thrown in the try block, we throw an error 
+with the message 'This error will get caught'.
+4) Following the try block is the catch statement which accepts the thrown error from the try block. 
+The e represents the thrown error.
+5) The curly braces that follow catch(e) is known as the catch block and contains code that executes 
+to handle the error.
+6) Since the error is caught, our console.log() after the try...catch statement prints 'The thrown 
+error that was caught in the try...catch statement!'.
+
+Generally speaking, in a try...catch statement, we evaluate code in the try block and if the code 
+throws an error, the code inside the catch block will handle the error for us. The provided example 
+just showcases how a try...catch statement works because we know an error is being thrown. 
+Let’s first practice writing our own try...catch statement and afterwards we will go over a more 
+practical usage of try...catch.
+
+
+we can also use a try...catch statement to handle built-in errors that are thrown by the JavaScript 
+engine that is reading and evaluating our code.
+
+Using a try...catch statement for built-in JavaScript errors is really beneficial when we need to 
+use data from an external source that’s not written directly in our program.
+
+Let’s say we expect to grab an array from a database but the information we get back is a string. 
+In our program, we could have a function that only works on arrays. If that function was called with 
+a string instead of an array we would get an error and our program would stop running!
+
+However, we can use a try...catch statement to handle the thrown error for us which allows our 
+program to continue running and we receive a message knowing what went wrong! Let’s see how we can 
+implement this in our code.

@@ -1,0 +1,12 @@
+The throw Keyword
+
+Creating an error doesn’t cause our program to stop — remember, an error must be thrown for it to 
+halt the program.
+
+To throw an error in JavaScript, we use the throw keyword like so:
+
+throw Error('Something wrong happened');
+// Error: Something wrong happened
+
+
+When we use the throw keyword, the error is thrown and code after throw statement will not execute.

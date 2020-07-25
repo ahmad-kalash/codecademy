@@ -1,0 +1,8 @@
+Javascript error stack trace
+An error stack trace tells a developer that it has detected 
+an error within the code. Along with, which line to find the error, 
+what type of error has occurred and a description of the error.
+
+This information is logged as an error stack trace — a printed message containing information 
+about where the error occurred, what type of error was thrown, and a description of the error.
+

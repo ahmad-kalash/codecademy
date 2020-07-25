@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 10px;
+}
+
+header{
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+    align-items: center;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+a {
+    color: seashell;
+  }
+
+header img {
+    padding-left: 10px;
+    height: 50px;
+}
+
+nav {
+text-align: right;
+flex-grow: 1;
+}
+
+nav span {
+    text-decoration: underline;
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.main {
+    padding-top: 69px;
+    opacity: 0.9;
+    width: 1200px;
+    margin: auto;
+  }
+
+  #mession {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-bedford-bizarre.jpg);
+    height: 700px;
+    padding-top: 70px;
+    margin: auto;
+    width: 1200px;
+    }
+
+#mession .content {
+    background-color: black;
+    width: 100%;
+    margin: auto;
+}
+#store {
+    width: 1000px;
+    margin: auto;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+#gallery{
+    padding-top: 20px;
+    flex-direction: row;
+    //justify-content: space-around;
+}
+
+#item {
+    flex-direction: column;
+    padding: 10px;
+}
+#item img{
+    width: 300px;
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+#locations {
+    background-image: url(./img/img-locations-background.jpg);
+    height: 500px;
+    padding-top: 70px;
+    margin: auto;
+    width: 1200px;
+    flex-direction: column;
+    justify-content: flex-start;    
+    align-items: center;
+}
+
+.address{
+width: 300px;
+//height: 200px;
+background-color: black;
+margin-top: 15px;
+margin-right: 40px;
+}
+
+.contact {
+    width: 1200px;
+    height: 200px;
+    margin: auto;
+}
+
+footer{
+    padding-top: 20px;
+    text-align: left;
+}

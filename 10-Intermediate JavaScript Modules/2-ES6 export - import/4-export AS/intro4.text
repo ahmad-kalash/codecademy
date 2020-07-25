@@ -1,0 +1,38 @@
+Using the import keyword in Javascript
+As of ES6, the import keyword can be used to import functions, objects or
+ primitives previously exported into the current script.
+
+-There are many ways to use the import keyword, for example, you can import 
+all the exports from a script by using the * selector as follows: 
+
+import * from 'module_name';.
+
+
+import * as mymod from 'module_name';     //This allows us to import an entire module from module_name as an alias mymod, whatever name we exported would be available to us as properties of mymod
+
+
+-A single function can be imported with curly brackets as follows: 
+
+import {funcA} as name from 'module_name';
+
+
+-Or many functions by name:
+
+ import {funcA, funcB} as name from 'module_name';
+
+
+
+
+
+// add.js
+export const add = (x, y) => {
+    return x + y
+}
+
+
+// main.js
+import { add } from './add';
+console.log(add(2, 3)); // 5
+
+
+

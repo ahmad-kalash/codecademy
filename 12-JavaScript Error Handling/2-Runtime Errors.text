@@ -1,0 +1,12 @@
+Runtime Errors
+Errors contain useful messages that tell us why our program isn’t working or why the error was 
+thrown. When an error is thrown, our program stops running and the console displays the error 
+message in red text
+
+
+When we execute code and a line of code throws an error, that error is referred to as a runtime error. 
+In JavaScript, there are built-in error objects that have a name and message property which 
+tell us what went wrong. Examples of built-in runtime errors include:
+
+-ReferenceError: when a variable or function cannot be found.
+-TypeError: when a value is not a valid type, see the example below:

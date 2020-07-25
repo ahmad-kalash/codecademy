@@ -1,0 +1,17 @@
+Review
+We just learned how to use JavaScript modules. Let’s review what we learned:
+
+Modules in Node.js are reusable pieces of code that can be exported from one program and imported 
+for use in another program.
+
+1) module.exports exports the module for use in another program.
+2) require() imports the module for use in the current program.
+
+
+
+ES6 introduced a more flexible, easier syntax to export modules:
+
+1) default exports use export default to export JavaScript objects, functions, and primitive data types.
+2) named exports use the export keyword to export data in variables.
+3) named exports can be aliased with the as keyword.
+4) import is a keyword that imports any object, function, or data type.

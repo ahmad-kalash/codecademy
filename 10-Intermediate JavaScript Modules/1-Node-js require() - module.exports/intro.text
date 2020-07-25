@@ -1,0 +1,43 @@
+Hello Modules
+JavaScript modules are reusable pieces of code that can be exported from one program and imported
+ for use in another program.
+
+Modules are particularly useful for a number of reasons. By separating code with similar logic 
+into files called modules, we can:
+
+find, fix, and debug code more easily;
+reuse and recycle defined logic in different parts of our application;
+keep information private and protected from other modules;
+and, importantly, prevent pollution of the global namespace and potential naming collisions,
+ by cautiously selecting variables and behavior we load into a program.
+In this lesson, we’ll cover two ways to implement modules in JavaScript: Node.js’s module.exports 
+and require() syntax, as well as the ES6 import/export syntax.
+
+
+1) 
+module.exports
+We can get started with modules by defining a module in one file and making the module available
+ for use in another file with Node.js module.exports syntax. Every JavaScript file run in Node
+  has a local module object with an exports property used to define what should be exported from
+   the file.
+
+Below is an example of how to define a module and how to export it using the statement module.exports.
+
+const Airplane = {};
+Airplane.myAirplane = "StarJet";
+module.exports = Airplane;
+
+2)
+require()
+To make use of the exported module and the behavior we define within it, we import
+ the module into another file. In Node.js, use the require() function to import modules.
+
+For instance, say we want the module to control the menu’s data and behavior, 
+and we want a separate file to handle placing an order. We would create a separate file order.js and
+ import the Menu module from menu.js to order.js using require(). 
+ require() takes a file path argument pointing to the original module file.
+
+ Taking a closer look, the pattern to import a module is:
+-Import the module with require() and assign it to a local variable.
+-Use the module and its properties within a program.
+

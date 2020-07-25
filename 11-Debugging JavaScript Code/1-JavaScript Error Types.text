@@ -1,0 +1,34 @@
+JavaScript Error Types
+
+Now that you can identify the type of error from an error stack trace, you might be wondering what the different types of errors mean.
+
+Here are three common error types:
+
+1) SyntaxError: This error will be thrown when a typo creates invalid code — code that cannot be 
+interpreted by the compiler. When this error is thrown, scan your code to make sure you properly 
+opened and closed all brackets, braces, and parentheses and that you didn’t include any invalid 
+semicolons. (Creates an instance representing a syntax error.)
+
+2) ReferenceError: This error will be thrown if you try to use a variable that does not exist. 
+When this error is thrown, make sure all variables are properly declared. (Creates an instance 
+representing an error that occurs when de-referencing an invalid reference.)
+
+3) TypeError: This error will be thrown if you attempt to perform an operation on a value of 
+the wrong type. For example, if we tried to use a string method on a number, it would throw a 
+TypeError. (Creates an instance representing an error that occurs when a variable or parameter 
+is not of a valid type.)
+
+4) EvalError
+Creates an instance representing an error that occurs regarding the global function eval().
+
+5) InternalError 
+Creates an instance representing an error that occurs when an internal error in the JavaScript 
+engine is thrown. E.g. "too much recursion".
+
+6) RangeError
+Creates an instance representing an error that occurs when a numeric variable or parameter is 
+outside of its valid range.
+
+7) URIError
+Creates an instance representing an error that occurs when encodeURI() or decodeURI() are passed 
+invalid parameters.

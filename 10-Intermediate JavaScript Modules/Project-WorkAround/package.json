@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "name": "Employee",
+  "version": "1.0.0",
+  "description": "HR",
+  "main": "employee.js",
+  "author": "Codecademy",
+  "license": "ISC"
+   
+}

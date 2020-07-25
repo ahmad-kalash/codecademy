@@ -1,0 +1,55 @@
+Review Requests I
+
+You’ve done an amazing job navigating through making XHR GET and POST requests! Take some time to review the core concepts before moving on to the next lesson.
+
+JavaScript is the language of the web because of its asynchronous capabilities. AJAX, which stands for Asynchronous JavaScript and XML, is a set of tools that are used together to take advantage of JavaScript’s asynchronous capabilities.
+
+There are many HTTP request methods, two of which are GET and POST.
+
+GET requests only request information from other sources.
+
+POST methods can introduce new information to other sources in addition to requesting it.
+
+GET requests can be written using an XMLHttpRequest object and vanilla JavaScript.
+
+POST requests can also be written using an XMLHttpRequest object and vanilla JavaScript.
+
+Writing GET and POST requests with XHR objects and vanilla JavaScript requires constructing the XHR object using new, setting the responseType, creating a function that will handle the response object, and opening and sending the request.
+
+To add a query string to a URL endpoint you can use ? and include a parameter.
+
+To provide additional parameters, use & and then include a key-value pair, joined by =.
+
+Determining how to correctly write the requests and how to properly implement them requires carefully reading the documentation of the API with which you’re working.
+
+
+Instructions
+Play around with the browser and code to make GET and POST requests. If you’re going to make POST requests, make sure you assign apiKey your Rebrandly API key and run the code!
+
+If you want to challenge yourself:
+
+Build shortenUrl() or getSuggestions() from scratch.
+Manipulate the object that is returned to display something different in the browser.
+Use a different API to make a GET or POST request.
+Create query strings to yield different results.
+
+
+Question
+In the context of this lesson 2, what other types of HTTP requests are there?
+
+Answer
+In addition to the GET and POST requests which are the most commonly used, there are several other types of requests that may be used in certain situations:
+
+A PATCH request, which can be used to modify some resource.
+
+A PUT request, which can create a new resource or replace an existing one.
+
+A DELETE request, which is used to delete a specified resource.
+
+There is also a HEAD request, which asks for a similar response as the GET but without the body of the request.
+
+A CONNECT request, which is used to create a two-way communication with the requested resource.
+
+An OPTIONS request, which is used to get the communication options from the target resource.
+
+Finally, there is a TRACE request, which is used to perform a test along the path to the target resource using a loop-back message.

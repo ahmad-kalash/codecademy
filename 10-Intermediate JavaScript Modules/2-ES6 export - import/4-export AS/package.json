@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "name": "mission",
+  "version": "1.0.0",
+  "description": "A terminal maze-solving game.",
+  "main": "4-missionControl.js",
+  "author": "Codecademy",
+  "license": "ISC"
+  
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Languages</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <script src="../handlebars.min.js"></script>
+    <!-- Add an {{each}} helper block in the <script> element below-->
+    <script id="languagesTemp" type="text/x-handlebars-template">
+        {{#each languages}}
+        <div class='card'> 
+        {{#if this.modern}} 
+          <p>I should learn <a>{{this.name}}</a>. which need <aa>{{this.time}}</aa> days to finish</p>
+        {{else}}
+          <p>When I have time, I'll learn <a>{{this.name}}</a>. because it is old fasion.</p>
+        {{/if}}
+        </div>
+      {{/each}}
+  
+    </script>
+  </head>
+  <body>
+    <h1>
+      Thoughts on Languages:
+    </h1>
+    <h2>I got the language's name and time from an array of objects. each obeject represent a language with its properties. I used "{{#each}}" and {{#if}} helppers and handlebars to create this page.</h2>
+    <h2>so i is easy to add more language any time you just need to add an object to the languages array.</h2>
+    <div id="goals">
+    </div>
+      <script src="./main.js" type="text/javascript"></script>  
+  </body>
+</html>

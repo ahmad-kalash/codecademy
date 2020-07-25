@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "name": "messages",
+  "version": "1.0.0",
+  "description": "A terminal maze-solving game.",
+  "main": "messages.js",
+  "author": "Codecademy",
+  "license": "ISC"
+  
+}
